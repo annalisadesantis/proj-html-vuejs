@@ -182,7 +182,7 @@ header{
 /*  TYPE FITNESS */
 
 .type-fitness{
-    height: 600px;
+    height: 650px;
     background: rgb(65,84,254);
     background: linear-gradient(156deg, rgba(65,84,254,1) 0%, rgba(188,4,40,1) 100%);
 }
@@ -191,7 +191,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* position: relative; */
 }
 
 .type-fitness-top{
@@ -264,4 +263,127 @@ header{
     color: #bcbcbc;
     font-size: 13px;
     margin-right: 10px;
+}
+
+/* FITNESS ONLINE */
+
+.fitness-online{
+    background-color: #ffffff;
+    height: 500px;
+    display: flex;
+}
+
+.fitness-online-left{
+    width: 50%;
+    height: 100%;
+    margin-top: -40px;
+    position: relative;
+}
+
+.fitness-online-left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 3px 20px 0px;
+}
+
+.fitness-online-left i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fitness-online-right{
+    width: 50%;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 70px;
+}
+
+.fitness-online-right h4{
+    color: #4154fe;
+    margin-bottom: 15px;
+}
+
+.fitness-online-right h1{
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.fitness-online-right img{
+    width: 30px;
+    height: 30px;
+}
+
+.fitness-online-right span{
+    color:  #bcbcbc;
+    margin: 20px 0px;
+    font-size: 13px;
+}
+
+.red-button{
+    background-color: #ec5a57;
+    border: 2px solid  #ec5a57;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 8px 14px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.red-button:hover{
+    background-color: #bc0428;
+    border: 2px solid  #bc0428;
+}
+
+.immagini-fitness-online{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.immagine-right{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;;
+}
+
+.immagine-right small{
+    font-size: 10px;
+    color: #bcbcbc;
+}
+
+.youtube{
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    font-size: 10px;
+    color: black;
+}
+
+.youtube-text{
+    background-color: #e62020;
+    padding: 2px 4px;
+}
+
+.youtube-number{
+    background-color: white;
+    padding: 2px 4px;
+}
+
+.youtube p{
+    display: inline-block;
+}
+
+
+/* PALYLIST */
+
+.playlist{
+    background-color: #ffffff;
+    height: 400px;
 }
