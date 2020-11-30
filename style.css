@@ -12,6 +12,7 @@ body{
 .container{
     width: 1000px;
     margin: auto;
+    display: flex;
 }
 
 .blu-buttom{
@@ -19,7 +20,7 @@ body{
     background-color: #4154fe;
     border: 2px solid  #4154fe;
     color: #ffffff;
-    padding: 8px 12px;
+    padding: 8px 14px;
     font-size: 11px;
     cursor: pointer;
 }
@@ -27,6 +28,22 @@ body{
 .blu-buttom:hover{
     background-color: #ec5a57;
     border: 2px solid  #ec5a57;
+}
+
+.trasparente-buttom{
+    border-radius: 20px;
+    border: 1px solid  #78787a;
+    background-color: inherit;
+    color: #ffffff;
+    padding: 9px 15px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.trasparente-buttom:hover{
+    background-color: #ffffff;
+    border: 1px solid  #ffffff;
+    color: #060606;
 }
 
 /* HEADER */
@@ -52,6 +69,10 @@ header{
     margin-left: 20px;
 }
 
+.header-right ul li:hover{
+    color: #ffffff;
+}
+
 .header-right{
     color: #bcbcbc;
     font-size: 13px;
@@ -71,6 +92,10 @@ header{
 .header-right i{
     font-size: 11px;
     cursor: pointer;
+}
+
+.header-right i:hover{
+    color: #ffffff;
 }
 
 /* MAIN */
@@ -98,17 +123,56 @@ header{
 }
 
 .take-control-text{
-    color: white;
+    color: #ffffff;
     position: relative;
     z-index: 2;
-    width: 500px;
+    width: 1000px;
     height: 480px;
     display: flex;
     flex-direction: column;
-    background-color: red;
-}
-
-.take-control-text{
     justify-content: center;
     align-items: flex-start;
+}
+
+.take-control-text h4{
+    color: #bc0428;
+    margin-bottom: 15px;
+}
+
+.take-control-text h1{
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.take-control-text span{
+    color:  #bcbcbc;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.take-control-text.bottoni{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.take-control-text button{
+    margin-right: 10px;
+}
+
+.take-control-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.take-control-icon i{
+    color: #4154fe;
+    border: 1px solid #ffffff;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
 }
