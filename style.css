@@ -21,13 +21,19 @@ body{
     color: #ffffff;
     padding: 8px 12px;
     font-size: 11px;
+    cursor: pointer;
+}
+
+.blu-buttom:hover{
+    background-color: #ec5a57;
+    border: 2px solid  #ec5a57;
 }
 
 /* HEADER */
 
 header{
     background-color: #060606;
-    height: 80px;
+    height: 70px;
 }
 
 .container.double{
@@ -39,6 +45,7 @@ header{
 
 .header-right ul, .header-right ul li{
     display: inline-block;
+    cursor: pointer;
 }
 
 .header-right ul li, .header-right button, .header-right i{
@@ -58,8 +65,10 @@ header{
     font-size: 10px;
     color: #060606;
     margin-left: 4px;
+    cursor: pointer;
 }
 
 .header-right i{
     font-size: 11px;
+    cursor: pointer;
 }
