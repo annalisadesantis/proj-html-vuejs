@@ -12,6 +12,9 @@ body{
 .container{
     width: 1000px;
     margin: auto;
+}
+
+.container.flex{
     display: flex;
 }
 
@@ -44,6 +47,14 @@ body{
     background-color: #ffffff;
     border: 1px solid  #ffffff;
     color: #060606;
+}
+
+.play-circle{
+    color: #4154fe;
+    border: 1px solid #ffffff;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
 }
 
 /* HEADER */
@@ -104,7 +115,6 @@ header{
 
 .take-control{
     height: 480px;
-    background-color: red;
     background-image: url("immagini/slider82x-scaled.jpg");
     background-position: top;
     background-size: cover;
@@ -169,10 +179,89 @@ header{
     z-index: 2;
 }
 
-.take-control-icon i{
-    color: #4154fe;
-    border: 1px solid #ffffff;
-    padding: 30px;
-    background-color: #ffffff;
+/*  TYPE FITNESS */
+
+.type-fitness{
+    height: 600px;
+    background: rgb(65,84,254);
+    background: linear-gradient(156deg, rgba(65,84,254,1) 0%, rgba(188,4,40,1) 100%);
+}
+
+.type-fitness-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+}
+
+.type-fitness-top{
+    display: flex;
+    margin-top: -50px;
+}
+
+.type-fitness-img{
+    width: 280px;
+    height: 280px;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.type-fitness-img img{
+    width: 100%;
+    height: 100%;
+    border: 1px;
+    border-radius: 3px 3px 20px 3px;
+}
+
+.type-fitness-img span{
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.type-fitness-img p{
+    position: absolute;
+    top: 225px;
+    left: 25px;
+    color: #fff700;
+    font-size: 15px;
+}
+
+.type-fitness-bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 600px;
+}
+
+.type-fitness-bottom p{
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.type-fitness-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-fitness-footer img{
+    margin: 20px 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+}
+
+.type-fitness-footer span.name{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.type-fitness-footer span{
+    color: #bcbcbc;
+    font-size: 13px;
+    margin-right: 10px;
 }
