@@ -8,3 +8,58 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+.blu-buttom{
+    border-radius: 20px;
+    background-color: #4154fe;
+    border: 2px solid  #4154fe;
+    color: #ffffff;
+    padding: 8px 12px;
+    font-size: 11px;
+}
+
+/* HEADER */
+
+header{
+    background-color: #060606;
+    height: 80px;
+}
+
+.container.double{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-right ul, .header-right ul li{
+    display: inline-block;
+}
+
+.header-right ul li, .header-right button, .header-right i{
+    margin-left: 20px;
+}
+
+.header-right{
+    color: #bcbcbc;
+    font-size: 13px;
+}
+
+.header-right span{
+    border: 1px solid #fff700;
+    padding: 2px;
+    background-color: #fff700;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #060606;
+    margin-left: 4px;
+}
+
+.header-right i{
+    font-size: 11px;
+}
