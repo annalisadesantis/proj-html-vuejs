@@ -74,6 +74,12 @@ body{
     font-size: 30px;
 }
 
+.separator-blue{
+    color: #4154ff;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
 /* HEADER */
 
 header{
@@ -773,7 +779,7 @@ header{
 .box-sponsor img{
     width: 100px;
     height: 51.5px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .box-sponsor span{
