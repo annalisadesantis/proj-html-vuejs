@@ -26,6 +26,7 @@ body{
     padding: 8px 14px;
     font-size: 11px;
     cursor: pointer;
+    outline: 0;
 }
 
 .blu-buttom:hover{
@@ -41,6 +42,7 @@ body{
     padding: 9px 15px;
     font-size: 11px;
     cursor: pointer;
+    outline: 0;
 }
 
 .trasparente-buttom:hover{
@@ -338,6 +340,7 @@ header{
     padding: 8px 14px;
     font-size: 11px;
     cursor: pointer;
+    outline: 0;
 }
 
 .red-button:hover{
@@ -459,4 +462,78 @@ header{
     margin-top: 8px;
     color: #4154fe;
     font-size: 10px;
+}
+
+/* SUBSCRIBE */
+
+.subscribe{
+    height: 480px;
+    background-image: url("immagini/banner1-2x.jpg");
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+.subscribe::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(85deg, rgba(6,6,6,1) 39%, rgba(6,6,6,0.8211659663865546) 55%, rgba(6,6,6,0) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.subscribe-text{
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+    width: 1000px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.subscribe-text h4{
+    color: #bc0428;
+    margin-bottom: 15px;
+}
+
+.subscribe-text h1{
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.subscribe-text span{
+    color:  #bcbcbc;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.box-input{
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 2px solid  #ffffff;
+    background-color: #ffffff;
+    display: inline-block;
+    width: 400px;
+    height: 32px;
+}
+
+.subscribe-text input{
+    color: #bcbcbc;
+    font-size: 11px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+}
+
+.large-button{
+    padding: 8px 50px;
 }
