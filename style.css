@@ -716,3 +716,48 @@ header{
     text-align: center;
     line-height: 20px;
 }
+
+/* SPONSOR */
+
+.sponsor{
+    height: 300px;
+    background-color: #ffffff;
+}
+
+.sponsor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-sponsor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 67px;
+    margin-left: 20px;
+}
+
+.box-sponsor img{
+    width: 100px;
+    height: 51.5px;
+    margin-bottom: 20px;
+}
+
+.box-sponsor span{
+    color:  #78787a;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.box-sponsor a{
+    color: #060606;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* WORKOUT */
