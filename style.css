@@ -435,6 +435,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .playlist-bottom-img img{
@@ -595,8 +596,75 @@ header{
     color: #ffffff;
     font-size: 13px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .box-plan-fitness i.small-icon{
     font-size: 13px;
+}
+
+/* ARTICLE */
+
+.article{
+    background-color: #ffffff;
+    height: 400px;
+    margin-top: 80px;
+}
+
+.article-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.article-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-top p{
+    color: #060606;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.article-top span{
+    color: #78787a;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.article-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.article-bottom-img{
+    width: 280px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.article-bottom-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.article-bottom p{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #060606;
+    font-size: 16px;
+}
+
+.article-bottom span{
+    margin-top: 8px;
+    color: #78787a;
+    font-size: 12px;
 }
