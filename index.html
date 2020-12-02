@@ -24,34 +24,19 @@
             <header>
                 <div class="container double">
                     <div class="header-left">
-                        <img src="immagini/logo-mobile.png" alt="logo-avada">
+                        <img :src="logo_header" :alt="logo_name">
                     </div>
                     <div class="header-right">
                         <ul>
-                            <li>
-                                Home
-                            </li>
-                            <li>
-                                Services
-                            </li>
-                            <li>
-                                About
-                            </li>
-                            <li>
-                                Videos
-                            </li>
-                            <li>
-                                Blog
-                            </li>
-                            <li>
-                                Store
+                            <li v-for="voci in menu">
+                                {{ voci }}
                             </li>
                         </ul>
                         <span>
-                            new
+                            {{ novita }}
                         </span>
                         <button type="button" name="button" class="blu-buttom">
-                            Schedule a workout
+                            {{ button_header }}
                         </button>
                         <i class="fas fa-shopping-cart"></i>
                         <i class="fas fa-search"></i>
@@ -461,55 +446,32 @@
                     <div class="container">
                         <div class="footer-top-container">
                             <div class="box-footer">
-                                <img src="immagini/logo.png" alt="logo-avada">
+                                <img :src="logo_footer" :alt="logo_name">
                                 <small>
-                                    Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet purus ultrices mauris.
+                                    {{ text_footer }}
                                 </small>
                                 <div class="social-icon">
-                                    <i class="fab fa-facebook-f"></i>
-                                    <i class="fab fa-twitter"></i>
-                                    <i class="fab fa-youtube"></i>
-                                    <i class="fab fa-instagram"></i>
-                                    <i class="fab fa-linkedin-in"></i>
+                                    <i v-for="icon in icon_social" class="fab" :class="icon"></i>
                                 </div>
                             </div>
                             <div class="box-footer">
                                 <p>
-                                    Recent Posts
+                                    {{ title_box }}
                                 </p>
-                                <a href="#">
+                                <a href="#" v-for="link in links_footer">
                                     <i class="fas fa-angle-right"></i>
-                                    The best protein shake
-                                </a>
-                                <a href="#">
-                                    <i class="fas fa-angle-right"></i>
-                                    Ultimate cardio workout
-                                </a>
-                                <a href="#">
-                                    <i class="fas fa-angle-right"></i>
-                                    New juices available now
-                                </a>
-                                <a href="#">
-                                    <i class="fas fa-angle-right"></i>
-                                    Tips to find training partners
-                                </a>
-                                <a href="#">
-                                    <i class="fas fa-angle-right"></i>
-                                    20 best healthy recipes
+                                    {{ link }}
                                 </a>
                             </div>
                             <div class="box-footer">
                                 <p>
-                                    Contact Informations
+                                    {{ contact_footer }}
                                 </p>
                                 <span>
-                                    4746 Tipple Road Michigan 48449
+                                    {{ address_footer }}
                                 </span>
-                                <span class="contact">
-                                    Mobile : 1.800.000.0000
-                                </span>
-                                <span class="contact">
-                                    Email : info@your-company.com
+                                <span class="contact" v-for="contact in general_footer">
+                                    {{ contact }}
                                 </span>
                             </div>
                         </div>
