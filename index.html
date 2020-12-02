@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="style.css">
         <!-- RESPONSIVE -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- 12 BOOL -->
+        <link rel="stylesheet" href="12bool.css">
         <!-- GOOGLE FONT -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
@@ -22,24 +24,32 @@
         <div id="root">
             <!-- HEADER -->
             <header>
-                <div class="container double">
-                    <div class="header-left">
-                        <img :src="logo_header" :alt="logo_name">
+                <div class="container">
+                    <div class="col-xs-4">
+                        <div class="header-left">
+                            <img :src="logo_header" :alt="logo_name">
+                        </div>
                     </div>
-                    <div class="header-right">
-                        <ul>
-                            <li v-for="voci in menu">
-                                {{ voci }}
-                            </li>
-                        </ul>
-                        <span>
-                            {{ novita }}
-                        </span>
-                        <button type="button" name="button" class="blu-buttom">
-                            {{ button_header }}
-                        </button>
-                        <i class="fas fa-shopping-cart"></i>
-                        <i class="fas fa-search"></i>
+                    <div class="col-xs-8">
+                        <div class="header-right">
+                            <ul>
+                                <li v-for="voci in menu">
+                                    {{ voci }}
+                                </li>
+                            </ul>
+                            <span>
+                                {{ novita }}
+                            </span>
+                            <button type="button" name="button" class="blu-buttom">
+                                {{ button_header }}
+                            </button>
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="hamburger-menu">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-bars"></i>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -47,70 +57,80 @@
             <main>
                 <!-- TAKE CONTROL -->
                 <section class="take-control">
-                    <div class="container flex">
-                        <div class="take-control-text">
-                            <h4>
-                                Certified fitness professional
-                            </h4>
-                            <h1>
-                                Take control of your health
-                            </h1>
-                            <i class="fas fa-grip-lines separator-yellow"></i>
-                            <span>
-                                Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.
-                            </span>
-                            <div class="bottoni">
-                                <button type="button" name="button" class="blu-buttom">
-                                    <i class="fab fa-youtube"></i>
-                                    Visit my YouTube channel
-                                </button>
-                                <button type="button" name="button" class="trasparente-buttom">
-                                    Buy Avada today
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
+                    <div class="container">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="take-control-text">
+                                <h4>
+                                    Certified fitness professional
+                                </h4>
+                                <h1>
+                                    Take control of your health
+                                </h1>
+                                <i class="fas fa-grip-lines separator-yellow"></i>
+                                <span>
+                                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.
+                                </span>
+                                <div class="bottoni">
+                                    <button type="button" name="button" class="blu-buttom">
+                                        <i class="fab fa-youtube"></i>
+                                        Visit my YouTube channel
+                                    </button>
+                                    <button type="button" name="button" class="trasparente-buttom">
+                                        Buy Avada today
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div class="take-control-icon">
-                            <i class="fas fa-play play-circle"></i>
+                        <div class="col-md-6">
+                            <div class="take-control-icon">
+                                <i class="fas fa-play play-circle"></i>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <!-- TYPE FITNESS -->
                 <section class="type-fitness">
                     <div class="container">
-                        <div class="type-fitness-flex">
-                            <div class="type-fitness-top">
-                                <div class="type-fitness-img">
-                                    <img src="immagini/service6-2x.jpg" alt="Workout">
-                                    <i class="fas fa-grip-lines separator-white"></i>
-                                    <span>
-                                        Crossfit Workout
-                                    </span>
-                                    <p>
-                                        Push your limits
-                                    </p>
-                                </div>
-                                <div class="type-fitness-img">
-                                    <img src="immagini/box1-2x.jpg" alt="apparel">
-                                    <i class="fas fa-grip-lines separator-white"></i>
-                                    <span>
-                                        New gym apparel
-                                    </span>
-                                    <p>
-                                        Look good, feel good
-                                    </p>
-                                </div>
-                                <div class="type-fitness-img">
-                                    <img src="immagini/box3-2x.jpg" alt="training">
-                                    <i class="fas fa-grip-lines separator-white"></i>
-                                    <span>
-                                        Team training
-                                    </span>
-                                    <p>
-                                        Find a partner
-                                    </p>
-                                </div>
+                        <div class="col-xs-12 col-lg-4 type-flex">
+                            <div class="type-fitness-img">
+                                <img src="immagini/service6-2x.jpg" alt="Workout">
+                                <i class="fas fa-grip-lines separator-white"></i>
+                                <span>
+                                    Crossfit Workout
+                                </span>
+                                <p>
+                                    Push your limits
+                                </p>
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 type-flex">
+                            <div class="type-fitness-img">
+                                <img src="immagini/box1-2x.jpg" alt="apparel">
+                                <i class="fas fa-grip-lines separator-white"></i>
+                                <span>
+                                    New gym apparel
+                                </span>
+                                <p>
+                                    Look good, feel good
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 type-flex">
+                            <div class="type-fitness-img">
+                                <img src="immagini/box3-2x.jpg" alt="training">
+                                <i class="fas fa-grip-lines separator-white"></i>
+                                <span>
+                                    Team training
+                                </span>
+                                <p>
+                                    Find a partner
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-xs-12 type-flex">
                             <div class="type-fitness-bottom">
                                 <p>
                                     "How you respond to the challenge in the second half will determinate what you become after the game, whether you are a winner or a loser."
@@ -131,123 +151,139 @@
                 </section>
                 <!-- FITNESS ONLINE -->
                 <section class="fitness-online">
-                    <div class="fitness-online-left">
-                        <img src="immagini/service15-2x.jpg" alt="">
-                        <i class="fas fa-play play-circle"></i>
+                    <div class="col-lg-6">
+                        <div class="fitness-online-left">
+                            <img src="immagini/service15-2x.jpg" alt="">
+                            <i class="fas fa-play play-circle"></i>
+                        </div>
                     </div>
-                    <div class="fitness-online-right">
-                        <h4>
-                            Tune up your workouts
-                        </h4>
-                        <h1>
-                            The best health & fitness <br> advice online
-                        </h1>
-                        <div class="immagini-fitness-online">
-                            <div class="immagine-left">
-                                <img src="immagini/unnamed.jpg" alt="logo">
-                            </div>
-                            <div class="immagine-right">
-                                <small>
-                                    ThemFusion
-                                </small>
-                                <div class="youtube">
-                                    <p class="youtube-text">
-                                        <i class="fab fa-youtube"></i>
-                                        YouTube
-                                    </p>
-                                    <p class="youtube-number">
-                                        999+
-                                    </p>
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="fitness-online-right">
+                            <h4>
+                                Tune up your workouts
+                            </h4>
+                            <h1>
+                                The best health & fitness <br> advice online
+                            </h1>
+                            <div class="immagini-fitness-online">
+                                <div class="immagine-left">
+                                    <img src="immagini/unnamed.jpg" alt="logo">
+                                </div>
+                                <div class="immagine-right">
+                                    <small>
+                                        ThemFusion
+                                    </small>
+                                    <div class="youtube">
+                                        <p class="youtube-text">
+                                            <i class="fab fa-youtube"></i>
+                                            YouTube
+                                        </p>
+                                        <p class="youtube-number">
+                                            999+
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <span>
+                                Arcu eu facilisi ut quisque placerant nunc habitat. Magna semper mauris, veneratis,leo integer sit pellentesque.
+                            </span>
+                            <button type="button" name="button" class="red-button">
+                                <i class="fab fa-youtube"></i>
+                                Visit my YouTube channel
+                            </button>
                         </div>
-                        <span>
-                            Arcu eu facilisi ut quisque placerant nunc habitat. Magna semper mauris, veneratis,leo integer sit pellentesque.
-                        </span>
-                        <button type="button" name="button" class="red-button">
-                            <i class="fab fa-youtube"></i>
-                            Visit my YouTube channel
-                        </button>
                     </div>
                 </section>
                 <!-- PLAYLIST -->
                 <section class="playlist">
                     <div class="container">
-                        <div class="playlist-container">
-                            <div class="playlist-top">
+                        <div class="col-xs-12 col-lg-6">
+                            <div class="playlist-top-left">
                                 <p>
                                     Featured playlists
                                 </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="playlist-top-right">
                                 <span>
                                     View all videos
                                     <i class="fas fa-angle-right"></i>
                                 </span>
                             </div>
-                            <div class="playlist-bottom">
-                                <div class="playlist-bottom-img">
-                                    <img src="immagini/video2-2x.jpg" alt="video2">
-                                    <i class="fas fa-play play-circle small-circle"></i>
-                                    <p>
-                                        Thighs & glute workout
-                                    </p>
-                                    <span>
-                                        Increase your mobility
-                                    </span>
-                                </div>
-                                <div class="playlist-bottom-img">
-                                    <img src="immagini/video7-2x.jpg" alt="video7">
-                                    <i class="fas fa-play play-circle small-circle"></i>
-                                    <p>
-                                        Lift, firm & perk up
-                                    </p>
-                                    <span>
-                                        Feel young again
-                                    </span>
-                                </div>
-                                <div class="playlist-bottom-img">
-                                    <img src="immagini/video9-2x.jpg" alt="video9">
-                                    <i class="fas fa-play play-circle small-circle"></i>
-                                    <p>
-                                        Slim & trim your waist
-                                    </p>
-                                    <span>
-                                        Shed those extra pounds
-                                    </span>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-xs-12 col-lg-4">
+                            <div class="playlist-bottom-img">
+                                <img src="immagini/video2-2x.jpg" alt="video2">
+                                <i class="fas fa-play play-circle small-circle"></i>
+                                <p>
+                                    Thighs & glute workout
+                                </p>
+                                <span>
+                                    Increase your mobility
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
+                            <div class="playlist-bottom-img">
+                                <img src="immagini/video7-2x.jpg" alt="video7">
+                                <i class="fas fa-play play-circle small-circle"></i>
+                                <p>
+                                    Lift, firm & perk up
+                                </p>
+                                <span>
+                                    Feel young again
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
+                            <div class="playlist-bottom-img">
+                                <img src="immagini/video9-2x.jpg" alt="video9">
+                                <i class="fas fa-play play-circle small-circle"></i>
+                                <p>
+                                    Slim & trim your waist
+                                </p>
+                                <span>
+                                    Shed those extra pounds
+                                </span>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- SUBSCRIBE -->
                 <section class="subscribe">
-                    <div class="container flex">
-                        <div class="subscribe-text">
-                            <h4>
-                                Join our mailing list today
-                            </h4>
-                            <h1>
-                                Insider offers & flash sales in your <br>
-                                inbox every week.
-                            </h1>
-                            <i class="fas fa-grip-lines separator-yellow"></i>
-                            <div class="bottoni">
-                                <div class="box-input">
-                                    <input type="text" placeholder="Insert your email..*">
+                    <div class="container">
+                        <div class="col-xs-12">
+                            <div class="subscribe-text">
+                                <h4>
+                                    Join our mailing list today
+                                </h4>
+                                <h1>
+                                    Insider offers & flash sales in your <br>
+                                    inbox every week.
+                                </h1>
+                                <i class="fas fa-grip-lines separator-yellow"></i>
+                                <div class="bottoni">
+                                    <div class="box-input">
+                                        <input type="text" placeholder="Insert your email..*">
+                                    </div>
+                                    <button type="button" name="button" class="blu-buttom large-button">
+                                        Subscribe
+                                    </button>
                                 </div>
-                                <button type="button" name="button" class="blu-buttom large-button">
-                                    Subscribe
-                                </button>
+                                <span>
+                                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscing elit sed porttitor lectus.
+                                </span>
                             </div>
-                            <span>
-                                Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscing elit sed porttitor lectus.
-                            </span>
                         </div>
                     </div>
                 </section>
                 <!-- PLAN FITNESS -->
                 <section class="plan-fitness">
                     <div class="container">
-                        <div class="container-plan-fitness">
+                        <div class="col-xs-12 col-lg-4">
                             <div class="box-plan-fitness">
                                 <i class="far fa-clock"></i>
                                 <span>
@@ -264,6 +300,8 @@
                                     <i class="fas fa-angle-right small-icon"></i>
                                 </a>
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
                             <div class="box-plan-fitness">
                                 <i class="fas fa-dumbbell"></i>
                                 <span>
@@ -280,6 +318,8 @@
                                     <i class="fas fa-angle-right small-icon"></i>
                                 </a>
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
                             <div class="box-plan-fitness">
                                 <i class="fas fa-weight"></i>
                                 <span>
@@ -302,52 +342,60 @@
                 <!-- ARTICLE -->
                 <section class="article">
                     <div class="container">
-                        <div class="article-container">
-                            <div class="article-top">
+                        <div class="col-xs-12 col-lg-6">
+                            <div class="article-top-left">
                                 <p>
-                                    Latest articles
+                                    Featured playlists
                                 </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="article-top-right">
                                 <span>
-                                    Read all articles
+                                    View all videos
                                     <i class="fas fa-angle-right"></i>
                                 </span>
                             </div>
-                            <div class="article-bottom">
-                                <div class="article-bottom-img">
-                                    <img src="immagini/blog4-2x.jpg" alt="video2">
-                                </div>
-                                <div class="article-bottom-img">
-                                    <img src="immagini/blog1-2x.jpg" alt="video7">
-                                </div>
-                                <div class="article-bottom-img">
-                                    <img src="immagini/blog3-2x.jpg" alt="video9">
-                                </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="col-xs-12 col-lg-4">
+                            <div class="article-bottom-img">
+                                <img src="immagini/blog4-2x.jpg" alt="video2">
                             </div>
                             <div class="article-bottom-text">
-                                <div class="article-bottom-text-box">
-                                    <p>
-                                        The best protein shake
-                                    </p>
-                                    <span>
-                                        By admin | November 26th,2019 | Gym
-                                    </span>
-                                </div>
-                                <div class="article-bottom-text-box">
-                                    <p>
-                                        New juices available now
-                                    </p>
-                                    <span>
-                                        By admin | November 26th,2019 | Gym
-                                    </span>
-                                </div>
-                                <div class="article-bottom-text-box">
-                                    <p>
-                                        New juices available now
-                                    </p>
-                                    <span>
-                                        By admin | November 26th,2019 | Gym
-                                    </span>
-                                </div>
+                                <p>
+                                    The best protein shake
+                                </p>
+                                <span>
+                                    By admin | November 26th,2019 | Gym
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
+                            <div class="article-bottom-img">
+                                <img src="immagini/blog1-2x.jpg" alt="video7">
+                            </div>
+                            <div class="article-bottom-text">
+                                <p>
+                                    New juices available now
+                                </p>
+                                <span>
+                                    By admin | November 26th,2019 | Gym
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
+                            <div class="article-bottom-img">
+                                <img src="immagini/blog3-2x.jpg" alt="video9">
+                            </div>
+                            <div class="article-bottom-text">
+                                <p>
+                                    New juices available now
+                                </p>
+                                <span>
+                                    By admin | November 26th,2019 | Gym
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -355,25 +403,27 @@
                 <!-- BUY -->
                 <section class="buy">
                     <div class="container">
-                        <div class="buy-text">
-                            <p>
-                                "I've failed over and over again in my <br>life. And that is why I succeed."
-                            </p>
-                            <i class="fas fa-grip-lines separator-yellow"></i>
-                            <span>
-                                Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa <br> in ipsum eros, tristique. Gravida suspendisse etiam in iaculis.
-                            </span>
-                            <button type="button" name="button" class="blu-buttom">
-                                Buy Avada today
-                                <i class="fas fa-angle-right"></i>
-                            </button>
+                        <div class="col-xs-12">
+                            <div class="buy-text">
+                                <p>
+                                    "I've failed over and over again in my <br>life. And that is why I succeed."
+                                </p>
+                                <i class="fas fa-grip-lines separator-yellow"></i>
+                                <span>
+                                    Arcu auctor gravida nisl, congue sit nisi tincidunt eget proin. In lacinia lacus donec sed massa <br> in ipsum eros, tristique. Gravida suspendisse etiam in iaculis.
+                                </span>
+                                <button type="button" name="button" class="blu-buttom">
+                                    Buy Avada today
+                                    <i class="fas fa-angle-right"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <!-- SPONSOR -->
                 <section class="sponsor">
                     <div class="container">
-                        <div class="sponsor-container">
+                        <div class="col-xs-12 col-lg-3">
                             <div class="box-sponsor">
                                 <img src="immagini/sponsor-1-2x.png" alt="yoga-studio">
                                 <i class="fas fa-grip-lines separator-blue"></i>
@@ -385,6 +435,8 @@
                                     <i class="fas fa-angle-right"></i>
                                 </a>
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-3">
                             <div class="box-sponsor">
                                 <img src="immagini/sponsor-2-2x.png" alt="fitness-center">
                                 <i class="fas fa-grip-lines separator-blue"></i>
@@ -396,6 +448,8 @@
                                     <i class="fas fa-angle-right"></i>
                                 </a>
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-3">
                             <div class="box-sponsor">
                                 <img src="immagini/sponsor-3-2x.png" alt="fitness-club">
                                 <i class="fas fa-grip-lines separator-blue"></i>
@@ -407,6 +461,8 @@
                                     <i class="fas fa-angle-right"></i>
                                 </a>
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-3">
                             <div class="box-sponsor">
                                 <img src="immagini/sponsor-4-2x.png" alt="power-gym">
                                 <i class="fas fa-grip-lines separator-blue"></i>
@@ -424,18 +480,20 @@
                 <!-- WORKOUT -->
                 <section class="workout">
                     <div class="container">
-                        <div class="workout-text">
-                            <i class="fas fa-play play-circle"></i>
-                            <p>
-                                Crossfit workout of the day
-                            </p>
-                            <span>
-                                November 15th,2019
-                            </span>
-                            <small>
-                                View all video
-                                <i class="fas fa-long-arrow-alt-right"></i>
-                            </small>
+                        <div class="col-xs-12">
+                            <div class="workout-text">
+                                <i class="fas fa-play play-circle"></i>
+                                <p>
+                                    Crossfit workout of the day
+                                </p>
+                                <span>
+                                    November 15th,2019
+                                </span>
+                                <small>
+                                    View all video
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </small>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -444,7 +502,7 @@
             <footer>
                 <div class="footer-top">
                     <div class="container">
-                        <div class="footer-top-container">
+                        <div class="col-xs-12 col-lg-4">
                             <div class="box-footer">
                                 <img :src="logo_footer" :alt="logo_name">
                                 <small>
@@ -454,6 +512,8 @@
                                     <i v-for="icon in icon_social" class="fab" :class="icon"></i>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
                             <div class="box-footer">
                                 <p>
                                     {{ title_box }}
@@ -463,6 +523,8 @@
                                     {{ link }}
                                 </a>
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4">
                             <div class="box-footer">
                                 <p>
                                     {{ contact_footer }}
@@ -479,11 +541,13 @@
                 </div>
                 <div class="footer-bottom">
                     <div class="container">
-                        <div class="footer-bottom-container">
-                            <p>
-                                © Copyright 2012 - 2020 | Avada theme by
-                                <span>ThemeFusion</span> ThemeFusion | All rights reserved | Powered by <span>WordPress</span>
-                            </p>
+                        <div class="col-xs-12">
+                            <div class="footer-bottom-container">
+                                <p>
+                                    © Copyright 2012 - 2020 | Avada theme by
+                                    <span>ThemeFusion</span> ThemeFusion | All rights reserved | Powered by <span>WordPress</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
