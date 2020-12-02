@@ -229,17 +229,6 @@ header{
     margin-bottom: 80px;
 }
 
-/* .type-fitness-img::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgb(65,84,255);
-    background: linear-gradient(186deg, rgba(65,84,255,0) 0%, rgba(65,84,255,0.5158438375350141) 67%);
-    width: 100%;
-    height: 100%;
-} */
 
 .type-fitness-img:hover{
     transform: scale(1.08);
@@ -253,10 +242,25 @@ header{
     border-radius: 3px 3px 20px 3px;
 }
 
+.type-fitness-img::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(3,4,15,0) 11%, rgba(3,4,15,0.7) 100%);
+    width: 100%;
+    height: 100%;
+    border: 1px;
+    border-radius: 3px 3px 20px 3px;
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.2);
+}
+
 .type-fitness-img i{
     position: absolute;
     top: 170px;
     left: 25px;
+    z-index: 100;
 }
 
 .type-fitness-img span{
@@ -265,6 +269,7 @@ header{
     left: 25px;
     color: #ffffff;
     font-size: 20px;
+    z-index: 100;
 }
 
 .type-fitness-img p{
@@ -273,6 +278,7 @@ header{
     left: 25px;
     color: #fff941;
     font-size: 15px;
+    z-index: 100;
 }
 
 .type-fitness-bottom{
