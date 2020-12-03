@@ -1,6 +1,4 @@
-
 /* SET UP GENERALE */
-
 *{
     margin: 0;
     padding: 0;
@@ -163,6 +161,41 @@ header{
     .header-right i:hover{
         color: #ffffff;
     }
+}
+
+/* MENU A TENDINA */
+
+.menu-tendina{
+    background-color: #060606;
+}
+
+.box-tendina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-tendina ul{
+    list-style-type: none;
+}
+
+.box-tendina ul li{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box-tendina ul li:hover{
+    color: rgb(65, 84, 255);
+    background-color: rgb(18, 18, 22);
+    border-bottom-color: rgb(6, 6, 7);
 }
 
 /* TAKE CONTROL */

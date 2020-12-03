@@ -8,6 +8,10 @@ var app = new Vue({
         novita: "new",
         button_header: "Schedule a workout",
 
+        // MENU A TENDINA
+        tendina: false,
+
+
         // FOOTER
         logo_footer: "immagini/logo.png",
         text_footer: "Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet purus ultrices mauris.",
@@ -18,6 +22,17 @@ var app = new Vue({
         address_footer: "4746 Tipple Road Michigan 48449",
         general_footer: ["Mobile : 1.800.000.0000", "Email : info@your-company.com"]
 
+    },
+    methods:{
+        // Show menu tendina
+        show_menu(){
+
+            if (this.tendina == false) {
+                this.tendina = true;
+            }else{
+                this.tendina = false;
+            }
+        }
     }
 
 });

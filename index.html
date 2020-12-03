@@ -48,11 +48,28 @@
                         </div>
                         <div class="hamburger-menu">
                             <i class="fas fa-shopping-cart"></i>
-                            <i class="fas fa-bars"></i>
+                            <i class="fas fa-bars" @click="show_menu"></i>
                         </div>
                     </div>
                 </div>
             </header>
+            <!-- MENU A TENDINA -->
+            <div class="menu-tendina" v-if="tendina">
+                <div class="container">
+                    <div class="col-xs-12">
+                        <div class="box-tendina">
+                            <ul>
+                                <li v-for="voci in menu">
+                                    {{ voci }}
+                                </li>
+                                <li>
+                                    {{ button_header }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- MAIN -->
             <main>
                 <!-- TAKE CONTROL -->
