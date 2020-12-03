@@ -1,4 +1,6 @@
+
 /* SET UP GENERALE */
+
 *{
     margin: 0;
     padding: 0;
@@ -96,13 +98,13 @@ header{
 }
 
 .hamburger-menu i{
-    color: #ffffff;
+    color: #bcbcbc;
     margin-right: 20px;
     cursor: pointer;
 }
 
 .hamburger-menu i:hover{
-    color: #bcbcbc
+    color: #ffffff;
 }
 
 .header-right{
@@ -938,7 +940,6 @@ footer{
     background-color: #060606;
 }
 
-
 .box-footer{
     max-width: 350px;
     max-height: 270px;
@@ -1184,7 +1185,5 @@ footer{
         text-align: center;
         margin: 20px 20px;
     }
-
-
 
 }
