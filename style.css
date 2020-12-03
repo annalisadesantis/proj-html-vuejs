@@ -200,6 +200,17 @@ header{
     border-bottom-color: rgb(6, 6, 7);
 }
 
+.box-tendina span{
+    border: 1px solid #fff941;
+    padding: 2px;
+    background-color: #fff941;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #060606;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
 /* TAKE CONTROL */
 
 .take-control{

@@ -5,7 +5,6 @@ var app = new Vue({
         logo_header: "immagini/logo-mobile.png",
         logo_name: "logo-avada",
         menu: ["Home", "Services", "About", "Videos", "Blog", "Store"],
-        novita: "new",
         button_header: "Schedule a workout",
 
         // MENU A TENDINA
