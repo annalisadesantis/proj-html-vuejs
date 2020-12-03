@@ -6,7 +6,7 @@ var app = new Vue({
         logo_name: "logo-avada",
         menu: ["Home", "Services", "About", "Videos", "Blog", "Store"],
         button_header: "Schedule a workout",
-
+    
         // MENU A TENDINA
         tendina: false,
 
